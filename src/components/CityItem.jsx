@@ -11,12 +11,14 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function CityItem({ city }) {
-  const { currentCity, setCities } = useCities();
+  const { currentCity, setCities, deleteCity } = useCities();
   const { cityName, date, emoji, id, position } = city;
   const { lat, lng } = position;
 
-  function handleDeleteCity() {
-    setCities((cities) => cities.filter((city) => city.id !== currentCity.id));
+  function handleDeleteCity(e) {
+    e.preventDefault();
+
+    deleteCity(id);
   }
   return (
     <li>
