@@ -38,7 +38,7 @@ function Map() {
   const { cities } = useCities();
   return (
     <div className={styles.mapContainer}>
-      {geolocationPosition && (
+      {true && (
         <Button type="position" onClick={getPosition}>
           {isLoadingPosition ? "loading..." : "Use your location"}
         </Button>
