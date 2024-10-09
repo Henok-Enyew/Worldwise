@@ -71,17 +71,18 @@ function CitiesProvider({ children }) {
     }
   }
 
-  async function createCity(newCity) {
+  async function createCity(city) {
     dispatch({ type: "loading" });
+    const newCity = { ...city, id: Date.now() };
     const updatedCities = [...cities, { id: Date.now(), ...newCity }];
-    saveCitiesToLocalStorage(updatedCities); // Save to local storage
+    saveCitiesToLocalStorage(updatedCities);
     dispatch({ type: "city/created", payload: newCity });
   }
 
   async function deleteCity(id) {
     dispatch({ type: "loading" });
     const updatedCities = cities.filter((city) => city.id !== id);
-    saveCitiesToLocalStorage(updatedCities); // Save to local storage
+    saveCitiesToLocalStorage(updatedCities);
     dispatch({ type: "city/deleted", payload: id });
   }
 
