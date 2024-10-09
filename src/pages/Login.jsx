@@ -14,16 +14,14 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    login(email, password);
+    if (email && password) login(email, password);
   }
   console.log(isAuthenticated);
   useEffect(
     function () {
-      if (isAuthenticated) navigate("/app");
-      // else navigate("/");
+      if (isAuthenticated) navigate("/app", { replace: true });
     },
-    [isAuthenticated]
+    [isAuthenticated, navigate]
   );
   return (
     <main className={styles.login}>

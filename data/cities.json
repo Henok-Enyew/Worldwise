@@ -1,39 +1,15 @@
 {
   "cities": [
     {
-      "id": "610d",
-      "cityName": "Aj Jabalen",
-      "country": "Sudan (the)",
-      "emoji": "🇸🇩",
-      "date": "2024-10-09T19:17:16.459Z",
+      "id": "0bed",
+      "cityName": "Shinile",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2024-10-09T22:46:18.999Z",
       "notes": "",
       "position": {
-        "lat": "13.111580118251661",
-        "lng": "32.80517578125001"
-      }
-    },
-    {
-      "id": "077a",
-      "cityName": "At Tadamon",
-      "country": "Sudan (the)",
-      "emoji": "🇸🇩",
-      "date": "2024-10-09T21:43:21.216Z",
-      "notes": "",
-      "position": {
-        "lat": "11.027472194117934",
-        "lng": "33.31054687500001"
-      }
-    },
-    {
-      "id": "d454",
-      "cityName": "Abu Jibeha",
-      "country": "Sudan (the)",
-      "emoji": "🇸🇩",
-      "date": "2024-10-09T21:45:47.495Z",
-      "notes": "",
-      "position": {
-        "lat": "10.833305983642491",
-        "lng": "31.442871093750004"
+        "lat": "10.422988388338242",
+        "lng": "41.94580078125001"
       }
     }
   ]
