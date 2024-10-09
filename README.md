@@ -17,7 +17,7 @@ Worldwise is a cool app that provides an interactive map experience, allowing us
 
 ## Live Demo
 
-You can view the live application [here](your-netlify-link-here).
+You can view the live application [here](https://worldwise-tour.netlify.app/).
 
 ## Getting Started 🚀
 
