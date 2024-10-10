@@ -52,16 +52,13 @@ function CitiesProvider({ children }) {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cities));
   }
 
-  useEffect(function () {
-    // No need to fetch cities from API initially
-  }, []);
-
   async function getCity(id) {
     if (Number(id) === currentCity.id) return;
 
     dispatch({ type: "loading" });
-    const city = cities.find((city) => city.id === id);
+    const city = cities.find((city) => city.id == id);
     if (city) {
+      console.log(city);
       dispatch({ type: "city/loaded", payload: city });
     } else {
       dispatch({
