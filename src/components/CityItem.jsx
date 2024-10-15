@@ -30,7 +30,7 @@ function CityItem({ city }) {
       >
         <span className={styles.emoji}>{emoji}</span>
         <h3 className={styles.name}>{cityName}</h3>
-        <times className={styles.date}>{formatDate(date)}</times>
+        <time className={styles.date}>{formatDate(date)}</time>
         <button
           style={{ zIndex: 1000 }}
           className={styles.deleteBtn}
